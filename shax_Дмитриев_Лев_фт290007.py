@@ -258,11 +258,11 @@ def SLON(pole_1,pole_2): #создание шахматной доски со с
                 if j < pole_1[1]:
                     if j == (pole_1[1] - cverhy + (i-1)): 
                         if F[i][j] == '*': F[i][j] = '&'
-                        else: D[i][j] = '*'
+                        else: F[i][j] = '*'
                 else:
                     if j == (pole_1[1] + cverhy - (i-1)):
                         if F[i][j] == '*': F[i][j] = '&'
-                        else: D[i][j] = '*'
+                        else: F[i][j] = '*'
             else:
                 if j > pole_1[1]:
                     if j == (pole_1[1] + cnisy - (8-i)):
